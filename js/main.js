@@ -12,9 +12,9 @@ let dataGlasses = [
 
 import { Glass } from "./models/glass.js";
 import { GlassList } from "./models/glassList.js";
-const glass1 = new Glass("Xuân Ý", "Vô cực", "Bồ tui", "Xik đẹp tuyệt dời");
+// const glass1 = new Glass("Xuân Ý", "Vô cực", "Bồ tui", "Xik đẹp tuyệt dời");
 const myGlassList = new GlassList(dataGlasses);
 myGlassList.renderGlassList("#vglassesList");
 
 const imgs = document.querySelector("#vglassesList");
-console.log(imgs.innerHTML);
+// console.log(imgs.innerHTML);

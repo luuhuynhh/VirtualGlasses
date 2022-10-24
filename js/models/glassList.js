@@ -31,6 +31,16 @@ export class GlassList {
         const ele = document.querySelector(selector);
         const { id } = img;
         const glass = this.list.find(glass => glass.id == id);
-        ele.innerHTML = `<img src="${glass.virtualImg}"/>`
+        ele.innerHTML = `<img src="${glass.virtualImg}"/>`;
+
+        const glassesInfo = document.querySelector("#glassesInfo");
+        // console.log(glassesInfo);
+        let content = `
+            <div class="title">${glass.name} - ${glass.brand} (${glass.color})</div>
+            <button class="btn btn-danger">$${glass.price}</button><span class="green">Stocking</span>
+            <p class="description">${glass.description}</p>
+        `
+        glassesInfo.innerHTML = content;
+        glassesInfo.style.display = "block";
     }
 }
